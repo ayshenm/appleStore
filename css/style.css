@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section 
+{
+    position: relative;
+    width: 100%;
+    min-width: 100vh;
+    padding:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header a .logo
+{
+    position: relative;
+    max-width:80px;
+}
+
+header ul
+{
+   position: relative;
+   display: flex;
+}
+
+header ul li
+{
+    list-style: none;
+    transition: .3s ease-in;
+    
+}
+
+header ul li a 
+{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    
+
+}
+header ul li :hover
+{  
+    border-bottom: 1px solid #52bd90;
+    color: #017143;
+    transition: .1s ease-in;
+}
+
+.content 
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.content .text_box
+{
+    position: relative;
+    max-width: 600px;
+}
+
+.content .text_box h2
+{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .text_box h2 span
+{
+    color:#101111;
+    font-size: 1.4em;
+    font-weight: 900;
+}
+
+.content .text_box p
+{
+    color: #333;
+
+}
+
+.content .text_box a
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    text-decoration: none;
+    background: #1256cd;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.content .text_box a:hover
+{
+    background: #0d0d0d;
+}
+
+.content .image_box
+{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.content .image_box img 
+{
+    max-width: 340px;
+}
+
+.thumb
+{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb li:hover
+{
+    transform: translateY(-15%);
+}
+.thumb li img
+{
+    max-width: 60px;
+}
+
+.sosial_bar
+{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sosial_bar li
+{
+    list-style: none;
+    
+    
+}
+
+.sosial_bar li a 
+{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    color: #fff;
+    font-size: 2rem;
+    
+}
+
+.sosial_bar li a :hover
+{
+    color: rgb(212, 233, 27);
+}
+.circle
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #0d5bd9;
+    clip-path: circle(600px at right 800px);
+}
